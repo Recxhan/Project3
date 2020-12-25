@@ -1,0 +1,257 @@
+html{
+    background-color: #FCF6F5FF;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1{
+    font-weight: 700;
+    background-color: #A13941FF;
+    margin: 0;
+    color: #FCF6F5FF;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+}
+
+h2{
+    font-weight: 600;
+    color: #A13941FF;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    padding-top: 40px;
+
+}
+
+p{
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    color: #00539CFF;
+    font-size: 25px;
+    padding: 10px 20px 40px 20px;
+}
+
+.thick-hr{
+    height: 6px;
+    background-color: #A13941FF;
+    margin: 0 15px 5px 15px;
+    border-style: none;
+}
+
+.thin-hr{
+    height: 3px;
+    background-color: #A13941FF;
+    margin: 0 15px 5px 15px;
+    border-style: none;
+}
+
+fieldset{
+    border-style: none;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.first label{
+    display: block;
+}
+
+.first input{
+    display: inline-block;
+}
+
+input[type="text"]::placeholder{
+    text-align: right;
+}
+
+input[type="email"]::placeholder{
+    text-align: right;
+}
+
+legend{
+    color: #A13941FF;;
+    font-weight: 600;
+    font-size: 35px;
+    padding: 30px 0 20px 5px;
+}
+
+.upper-label{
+    margin: 0;
+    font-weight: 400;
+    color: #00539CFF;
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+input, 
+textarea,
+select{
+    border-style: none;
+    background-color: #eff0f1;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    font-size: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="address"]{
+    transition: width 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="address"]:focus{
+    width: 200px;
+    background-color: #E94B3CFF;
+}
+
+
+.lower-label{
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    color: #00539CFF;
+    font-size: 20px;
+    padding: 0 0 0 5px;
+    
+}
+
+input[type=checkbox], 
+[type=radio]{
+    margin:10px 10px 10px 0px;
+}
+
+
+label[for=htmlnews], 
+[for=cssnews], 
+[for=javascriptnews], 
+[for=html], 
+[for=plaintext]{
+    font-size: 20px;
+    color: #00539CFF
+}
+
+
+#javascriptnews{
+    margin-bottom: 20px;
+}
+
+#plaintext{
+    margin-bottom: 20px;
+}
+
+textarea{
+    resize: none;
+    overflow: auto;
+    border-radius: 2%;
+    display: block;
+    margin: 10px auto 20px auto;
+    padding: 0;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    width: 307px;
+    height: 45px;
+    font-size: 25px;
+    color: #FCF6F5FF;
+    background-color: #A13941FF;
+    border-style: none;
+    border-radius: 2%;
+}
+
+.footer{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* viewport width:768px */
+@media(min-width: 768px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header{
+        align-self: stretch;
+    }
+
+    main{
+        align-self: center;
+        width: 60%;
+    }
+
+    h1{
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 13px;
+        padding: 10px 20px 20px 20px;
+    }
+
+    .thick-hr {
+        height: 4px;
+        margin: 0 15px 1px 15px;
+    }
+
+    .thin-hr {
+        height: 2px;
+        margin: 2px 15px 5px 15px;
+    }
+
+    legend {
+        font-size: 18px;
+        padding: 30px 0 20px 0px;
+    }
+    .first label{
+        font-size: 15px;
+    }
+    .first input,
+    .first select{
+        font-size: 25px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        width: 300px;
+        border-radius: 1%;
+    }
+    .input-wrapper{
+        display: flex;
+        align-items: baseline;
+
+    }
+
+    #zip{
+        width: 100px;
+        margin-left: 75px;
+        margin-right: auto;
+    }
+
+    .second label,
+    .second input{
+        font-size: 15px;
+    }
+
+    textarea{
+        width: 420px;
+        height: 70px;
+    }
+
+    button{
+        width: 420px;
+    }
+}
