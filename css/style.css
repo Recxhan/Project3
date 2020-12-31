@@ -64,13 +64,15 @@ fieldset{
     display: inline-block;
 }
 
-input[type="text"]::placeholder{
+#name::placeholder{
     text-align: right;
 }
 
 input[type="email"]::placeholder{
     text-align: right;
 }
+
+
 
 legend{
     color: #A13941FF;;
